@@ -7,8 +7,8 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID = os.environ.get("API_ID", "")  # ⚠️ Required
-    API_HASH = os.environ.get("API_HASH", "")  # ⚠️ Required
+    API_ID = os.environ.get("API_ID", "25262754")  # ⚠️ Required
+    API_HASH = os.environ.get("API_HASH", "c3cc61710738293edbc6a529583bcc4a")  # ⚠️ Required
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")  # ⚠️ Required
 
     # premium 4g renaming client
@@ -18,16 +18,16 @@ class Config(object):
 
     # database config
     DB_NAME = os.environ.get("DB_NAME", "Cluster0")
-    DB_URL = os.environ.get("DB_URL", "")  # ⚠️ Required
+    DB_URL = os.environ.get("DB_URL", "mongodb+srv://bestanimeandcartoonsclips:6ChCTALD96W7qkps@cluster0.dt9r1rc.mongodb.net/?retryWrites=true&w=majority")  # ⚠️ Required
 
     # other configs
     BOT_UPTIME = time.time()
-    START_PIC = os.environ.get("START_PIC", "")
+    START_PIC = os.environ.get("START_PIC", "https://graph.org/file/2d18f65e6563466a15577.jpg")
     ADMIN = [int(admin) if id_pattern.search(
-        admin) else admin for admin in os.environ.get('ADMIN', '').split()]  # ⚠️ Required
+        admin) else admin for admin in os.environ.get('ADMIN', '7179779107').split()]  # ⚠️ Required
     
-    FORCE_SUB = os.environ.get("FORCE_SUB", "") # ⚠️ Required Username without @
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))  # ⚠️ Required
+    FORCE_SUB = os.environ.get("FORCE_SUB", "-1001893295454") # ⚠️ Required Username without @
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002118699737"))  # ⚠️ Required
     FLOOD = int(os.environ.get("FLOOD", '10'))
     BANNED_USERS = set(int(x) for x in os.environ.get(
         "BANNED_USERS", "1234567890").split())
@@ -77,7 +77,7 @@ Exᴀᴍᴩʟᴇ: <code> /set_caption 📕 Fɪʟᴇ Nᴀᴍᴇ: {filename}
 
 ☞ Fᴏʀ Exᴀᴍᴘʟᴇ:
 
-◦ <code>Telegram : @KPSBots</code>
+◦ <code>Telegram : @arya_bro</code>
 """
 
     PROGRESS_BAR = """<b>\n
